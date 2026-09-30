@@ -1,0 +1,7 @@
+# Strips notebook outputs on commit so diffs stay clean and
+# both machines don't fight over execution counts / images.
+repos:
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1
+    hooks:
+      - id: nbstripout

@@ -1,0 +1,11 @@
+{
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "notebook.formatOnSave.enabled": false
+}

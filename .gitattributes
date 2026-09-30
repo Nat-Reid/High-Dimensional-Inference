@@ -1,0 +1,6 @@
+# Normalize line endings so macOS and Windows produce identical diffs
+* text=auto eol=lf
+*.ipynb text eol=lf
+*.py text eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf

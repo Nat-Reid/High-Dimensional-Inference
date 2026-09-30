@@ -1,0 +1,28 @@
+[project]
+name = "myproject"            # rename (and rename src/myproject/ to match)
+version = "0.1.0"
+description = "Shared notebooks and scripts"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # Runtime packages. Add with:  uv add <package>
+    "numpy",
+    "pandas",
+    "matplotlib",
+]
+
+[dependency-groups]
+# Tooling. Add with:  uv add --dev <package>
+dev = [
+    "ipykernel",
+    "jupyter",
+    "pre-commit",
+    "nbstripout",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/myproject"]
